@@ -1,0 +1,63 @@
+.container {
+  padding: 70px;
+  width: 661px;
+  height: 763px;
+  background: $color-background;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    border: none;
+  }
+}
+
+.options__context-menu {
+  display: none;
+  background: white;
+}
+
+.options__container {
+  width: 100%;
+  overflow: hidden;
+  background: $color-background-opt;
+
+  option{
+    border: 1px solid black;
+    font-size: 30px;
+    width: 100%;
+
+    &[selected] {
+      background: $color-background-opt-selected;
+    }
+  }
+}
+
+.results__container {
+  margin: 35px 0 70px 0;
+}
+
+.option_created {
+  height: 100px;
+  position: relative;
+  font-family: Roboto serif;
+  border : 1px solid black;
+  background: $color-background-opt-created;
+  line-height: 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-size: 16px;
+}
+
+.btn_delete {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+

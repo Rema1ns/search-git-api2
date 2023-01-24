@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background: #C4C4C4;
+  padding: 0 20px;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0, 0.1)
+}
+
+
+.search-input .autocom-box {
+  padding-left: 0px;
+  max-height: 200px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+
+.autocom-box li:hover {
+  background:  #efefef;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 0px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-input.active .autocom-box li{
+  display: block;
+}
+
+li {
+  overflow: auto;
+}
+
+.selected-list__content {
+  margin-top: 30px;
+  width: 400px;
+  height: 400px;
+}
+
+.selected-list__item {
+  margin-top: 5px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background-color: #E27BEB;
+  height: 80px;
+  width: 450px;
+  color: #000000;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.selected-list__remove-button {
+  position: relative;
+  background-color: rgba(255, 0, 0, 0);
+  top: -70px;
+  margin-left: 380px;
+  width: 50.2px;
+  height: 50.2px;
+  font-size: 60px;
+  color: #ff4646;
+  border: none;
+  cursor: pointer;
+}
